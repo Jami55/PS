@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std ;
+
+class Bank {
+public :
+			string name ;
+            int account_number , balance = 0 ;
+            void deposit (string name , int account_number , int account) {
+            			balance += account ;
+                        cout << "Name : " << name << "\n" ;
+                        cout << "Account Number : " << account_number << "\n" ;
+                        cout << "Deposited balance : " << balance << "\n" ;
+            }
+            void withdraw (int account) {
+            			if (account <= balance) {
+                        			balance -= account ;
+                                    cout << "Withdraw balance : " << account << "\n" ;
+                        } else {
+                        			cout << "Insufficient balance" << "\n" ;
+                        }
+            }
+            void t () {
+            			cout << "Total balance : " << balance << "\n" ;
+            }
+} ;
+
+int main () {
+			Bank object_1 ;
+            object_1.deposit ("Dr Ali (Tonmoy)" , 397 , 10000) ;
+            object_1.withdraw (4001) ;
+            object_1.t () ;
+            return 0 ;
+}
+
