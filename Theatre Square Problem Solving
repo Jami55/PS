@@ -1,0 +1,28 @@
+Algorithm of problem Theatre Square
+Declare three variables (n , m and a).
+Take input numbers n , m and a .
+Declare a variable square .
+Square = (n * m) - ((a * a) * 2) .
+Then print the value of square. 
+
+Code 
+
+
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std ;
+
+int f (int n , int m , int a) {
+            int square = (n * m) - ((a * a) * 2) ;
+            cout << square << "\n" ;
+            return 0 ;
+}
+
+int main () {
+            int n , m , a ;
+            cin >> n >> m >> a ;
+            f (n , m , a) ;
+            return 0 ;
+}
+
