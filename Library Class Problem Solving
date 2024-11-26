@@ -1,35 +1,69 @@
+
+
 #include <iostream>
 #include <cstring>
 #include <cmath>
 using namespace std ;
 
-class Car {
+class Book {
 public:
-            string car_name ;
-            int car_id , model , rental_price_per_day , how_many_available ;
-            bool is_available ;
-            void d (string car_name , int car_id , int model , int rental_price_per_day) {
-                        cout << "Car name : " << car_name << "\n" ;
-                        cout << "Car ID : " << car_id << "\n" ;
-                        cout << "Car model : " << model << "\n" ;
-                        cout << "Car rental price per day : " << rental_price_per_day << "\n" ;
+            string title , author ;
+            int ISBN , copies ;
+            void d (string title , string author , int ISBN) {
+                        cout << "Title : " << title << "\n" ;
+                        cout << "Author : " << author << "\n" ;
+                        cout << "ISBN : " << ISBN << "\n" ;
             }
-            void rent_car (bool is_available , bool is_returned , int user_how_many_car , int how_many_available , int rent) {
-                        cout << boolalpha << "\n" ;
-                        cout << "Car is available ? " << is_available << "\n" ;
-                        cout << "How many cars available ? " << how_many_available << "\n" ;
-                        cout << "How many cars rented ? " << rent << "\n" ;
-                        cout << "Car available : " << abs (how_many_available - rent) << "\n" ;
-                        cout << "Is car returned ? " << is_returned << "\n" ;
-                        cout << "How many returned ? " << abs (rent - user_how_many_car) << "\n" ;
-                        cout << "How many cars remaining to return ? " << abs ((rent - user_how_many_car) - user_how_many_car) << "\n" ;
+            void add_copies (int copies , int n) {
+                        copies += n ;
+                        cout << "Adding copies : " << n << "\n" ;
+                        cout << "Total copies : " << copies << "\n" ;
+            }
+            void borrow_book (int b) {
+                        cout << "Total books borrowed : " << b << "\n" ;
+            }
+            void return_book (int r , int b) {
+                        cout << "Total books returned : " << r << "\n" ;
+                        cout << "Remaining books : " << (b - r) << "\n" ;
+            }
+} ;
+
+class Library {
+public:
+            int books , members ;
+            string title ;
+            void d (int books , int members , string title) {
+                        cout << "Total books in the library : " << books << "\n" ;
+                        cout << "Total members in the library : " << members << "\n" ;
+                        cout << "Title of the book available in the library : " << title << "\n" ;
+            }
+            void add_book (int books , int b) {
+                        books += b ;
+                        cout << "Adding books in the library : " << b << "\n" ;
+                        cout << "Total books in the library after adding : " << books << "\n" ;
+            }
+            void search (string title , string u) {
+                        if (u == title) {
+                                    cout << "Book is found" << "\n" ;
+                        } else {
+                                    cout << "Book is not found" << "\n" ;
+                        }
             }
 } ;
 
 int main () {
-            cout << "Noakhali Jahangir Rent-A-Car service" << "\n" ;
-            Car object_1 ;
-            object_1.d ("Toyota SI Noah" , 8 , 2013 , 5000) ;
-            object_1.rent_car (true , false , 15 , 25 , 20) ;
+            cout << "Islamic Library Management System" << "\n" ;
+            Book object_1 ;
+            object_1.d ("Adorsho Romoni" , "Shaikh Abdul Hamid Faizi" , 123) ;
+            object_1.add_copies (40 , 5) ;
+            object_1.borrow_book (23) ;
+            object_1.return_book (22 , 23) ;
+            Library object_2 ;
+            object_2.d (200 , 193 , "Adorsho Romoni") ;
+            object_2.add_book (200 , 197) ;
+            object_2.search ("Adorsho Romoni" , "Adorsho Dampotto Jibon") ;
             return 0 ;
 }
+
+
+
