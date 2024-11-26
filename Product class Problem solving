@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cmath>
+#include <cstring>
+using namespace std ;
+
+class Product {
+public:
+            string product_name , customer_name ;
+            int product_price , product_id , product_quantity , customer_id , customer_product_quantity ;
+            void d (string product_name , int product_id , int product_quantity , int product_price) {
+                        cout << "Name of the product : " << product_name << "\n" ;
+                        cout << "ID of the product : " << product_id << "\n" ;
+                        cout << "Product Price : " << product_price << "\n" ;
+                        cout << "Quantity : " << product_quantity << "\n" ;
+            }
+            void add_product (int product_quantity , int increase_product , string product_name , int product_id , int product_price) {
+                        product_quantity += increase_product ;
+                        for (int i = 1 ; i <= increase_product ; i ++) {
+                                    cout << "Name of the product : " << product_name << "\n" ;
+                                    cout << "ID of the product : " << product_id << "\n" ;
+                                    cout << "Product price : " << product_price << "\n" ;
+                                    cout << "Quantity : " << i << "\n" ;
+                        }
+            }
+            void shopping_cart (string customer_name , int customer_id , int customer_product_quantity , int product_price) {
+                        int total_price = 0 ;
+                        cout << "SHOPPING CART" << "\n" ;
+                        cout << "Name of the customer : " << customer_name << "\n" ;
+                        cout << "ID of the customer : " << customer_id << "\n" ;
+                        cout << "Quantity of the product taken by customer : " << customer_product_quantity << "\n" ;
+                        for (int i = 1 ; i <= customer_product_quantity ; i ++) {
+                                    total_price += product_price ;
+                        }
+                        cout << "Total price of the customer : " << total_price << "\n" ;
+            }
+} ;
+
+
+int main () {
+            Product object_1 ;
+            object_1.d ("Somalian Jubba" , 9 , 5 , 397) ;
+            object_1.add_product (5 , 2 , "Zamati cap" , 9 , 181) ;
+            object_1.shopping_cart ("Jami Abdullah" , 9 , 2 , 181) ;
+            return 0 ;
+}
