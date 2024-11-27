@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstring>
+#include <ctime>
+using namespace std ;
+
+int f (int a [4]) {
+            int i = 0 , sum = 0 ;
+            while (i < 4) {
+                        sum += a [i] ;
+                        i ++ ;
+            }
+            cout << "Sum of all negative numbers : " << sum << "\n" ;
+            return sum ;
+}
+
+int main () {
+            int a [4] ;
+            cout << "Enter four negative numbers : " ;
+            int i = 0 ;
+            while (i < 4) {
+                        cin >> a [i] ;
+                        while (a [i] >= 0) {
+                                    cout << "Sorry , You enter positive numbers." << "\n" ;
+                                    cout << "Please , enter negative numbers : " ;
+                                    cin >> a [i] ;
+                        }
+                        i ++ ;
+            }
+            f (a) ;
+            return 0 ;
+}
