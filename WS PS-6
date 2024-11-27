@@ -1,0 +1,24 @@
+
+#include <iostream>
+#include <cmath>
+#include <cstring>
+using namespace std ;
+
+int f (string name , int actual) {
+            int human = actual * 7 ;
+            cout << name << " 's age is approximately equivalent to a " << human << " year old human." << "\n" ;
+            return human ;
+}
+
+int main () {
+            string name ;
+            int actual ;
+            cout << "How many old is your dog ? " ;
+            cin >> actual ;
+            cout << "What is your dog name ? " ;
+            cin >> name ;
+            f (name , actual) ;
+            return 0 ;
+}
+
+
