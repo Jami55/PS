@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+#include <cstring>
+using namespace std ;
+
+int f (int n , int a []) {
+            int total = 0 ;
+            int i = 0 ;
+            while (i < n) {
+                        total += a [i] ;
+                        i ++ ;
+            }
+            cout << "You have eaten " << total << " number of calories of food today." << "\n" ;
+            return total ;
+}
+
+int main () {
+            int n ;
+            cout << "How many items you have eaten today ? " ;
+            cin >> n ;
+            int a [n] ;
+            cout << "Enter the calories of all items : " ;
+            int i = 0 ;
+            while (i < n) {
+                        cin >> a [i] ;
+                        i ++ ;
+            }
+            f (n , a) ;
+            return 0 ;
+}
