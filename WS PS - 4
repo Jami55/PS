@@ -1,0 +1,26 @@
+
+#include <iostream>
+#include <cmath>
+using namespace std ;
+
+int f (int n) {
+            if (n < 1) {
+                        cout << "Read the preface. You may prefer more elementary book from the same author" << "\n" ;
+            } else {
+                        cout << "Enjoy the book." << "\n" ;
+            }
+            return 1 ;
+}
+
+int main () {
+            cout << "Hello reader." << "\n" ;
+            cout << "Welcome to C++." << "\n" ;
+            int n ;
+            cout << "How many languages have you used ? " ;
+            cin >> n ;
+            f (n) ;
+            return 0 ;
+}
+
+
+
