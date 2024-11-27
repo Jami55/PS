@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std ;
+
+int f (const double rate , double deposit) {
+            double newbalance ;
+            newbalance = deposit + (deposit * (rate / 100)) ;
+            cout << "In one year , that deposit will grow to $" << newbalance << " an amount worth waiting for." << "\n" ;
+            return newbalance ;
+}
+
+int main () {
+            const double rate = 6.9 ;
+            double deposit ;
+            cout << "Enter the deposit amount : " ;
+            cin >> deposit ;
+            f (rate , deposit) ;
+            return 0 ;
+}
+
