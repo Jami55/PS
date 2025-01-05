@@ -1,0 +1,10 @@
+i = 1 
+secrete = 9
+while i <= 3 :
+        guess = int (input ("Guess : "))
+        if guess == secrete :
+                print ("You win!")
+                break 
+        i += 1
+if guess != secrete :
+        print ("Sorry , you failed!")
