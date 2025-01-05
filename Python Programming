@@ -1,0 +1,348 @@
+
+
+Add class comment…
+
+
+Announcement: "weight = int (input ("Weight : ")) unit…"
+JAMI ABDULLAH Summer 22
+Created 7:08 PM7:08 PM
+weight = int (input ("Weight : "))
+unit = input ("(l) bs or (K)g : ")
+if unit == "l" :
+        final_weight = weight * (0.45)
+        print (f"Your weight : {final_weight} in kilogram")
+elif unit == "k" :
+        final_weight = weight / (0.45)
+        print (f"Your weight : {final_weight} in pounds")
+else :
+        print ("Invalid input")
+print ("Enjoy with these weight")
+
+Add class comment…
+
+
+Announcement: "name = "Zakwan Ammar" if len(name) < 3…"
+JAMI ABDULLAH Summer 22
+Created 6:48 PM6:48 PM
+name = "Zakwan Ammar"
+if len(name) < 3 :
+        print ("Name must be at least 3 characters")
+elif len(name) > 50 :
+        print ("Name must be less than 50 characters")
+else :
+        print ("Looks good")
+
+Add class comment…
+
+
+Announcement: "temperature = 39 if temperature > 30 :…"
+JAMI ABDULLAH Summer 22
+Created 3:56 PM3:56 PM
+temperature = 39
+if temperature > 30 :
+        print ("It is hot day")
+elif temperature < 10 :
+        print ("It is cold day")
+else :
+        print ("It is neither cold or hot")
+print ("Enjoy the day")
+
+Add class comment…
+
+
+Announcement: "has_high_income = True has_good_credit…"
+JAMI ABDULLAH Summer 22
+Created 12:12 PM12:12 PM
+has_high_income = True
+has_good_credit = False
+if(has_high_income and not has_good_credit) :
+        print ("Eligible for loan")
+else :
+        print ("Not Eligible for loan")
+print ("Have a nice business")
+
+Add class comment…
+
+
+Announcement: "has_high_income = True has_good_credit…"
+JAMI ABDULLAH Summer 22
+Created 12:10 PM12:10 PM
+has_high_income = True
+has_good_credit = False
+if(has_high_income or has_good_credit) :
+        print ("Eligible for loan")
+else :
+        print ("Not Eligible for loan")
+print ("Have a nice business")
+
+Add class comment…
+
+
+Announcement: "has_high_income = True has_good_credit…"
+JAMI ABDULLAH Summer 22
+Created 12:10 PM12:10 PM
+has_high_income = True
+has_good_credit = False
+if(has_high_income and has_good_credit) :
+        print ("Eligible for loan")
+else :
+        print ("Not Eligible for loan")
+print ("Have a nice business")
+
+Add class comment…
+
+
+Announcement: "price = 1000000 is_good_credit = True…"
+JAMI ABDULLAH Summer 22
+Created 12:03 PM12:03 PM
+price = 1000000
+is_good_credit = True
+if (is_good_credit) :
+        down_payment = (1000000) * (10 / 100)
+else :
+        down_payment = (1000000) * (20 / 100)
+print (f"Downpayment for buyer : ${down_payment}")
+
+Add class comment…
+
+
+Announcement: "price = 1000000 is_good_credit = True…"
+JAMI ABDULLAH Summer 22
+Created 11:54 AM11:54 AM
+price = 1000000
+is_good_credit = True
+if (is_good_credit) :
+        down_payment = (1000000) * (10 / 100)
+else :
+        down_payment = (1000000) * (20 / 100)
+print ("Downpayment of the buyer is : " , down_payment)
+
+Add class comment…
+
+
+Announcement: "is_hot = False is_cold = False…"
+JAMI ABDULLAH Summer 22
+Created 11:44 AM11:44 AM
+is_hot = False
+is_cold = False
+is_some_cold = True
+if (is_hot) :
+        print("It is a hot day")
+        print("Drink Plenty of water")
+elif (is_cold) :
+        print("It is a cold day")
+        print("Wear warm clothes")
+elif (is_some_cold) :
+        print ("It is some cold day")
+        print ("Wear little bit warm clothes")
+print ("It is a lovely day")
+
+Add class comment…
+
+
+Announcement: "is_hot = False is_cold = False…"
+JAMI ABDULLAH Summer 22
+Created 11:43 AM11:43 AM
+is_hot = False
+is_cold = False
+is_some_cold = True
+if (is_hot) :
+        print("It is a hot day")
+        print("Drink Plenty of water")
+elif (is_cold) :
+        print("It is a cold day")
+        print("Wear warm clothes")
+elif (is_some_cold) :
+        print ("It is some cold day")
+        print ("Wear little bit warm clothes")
+else :
+        print ("It is a lovely day")
+
+Add class comment…
+
+
+Announcement: "import math x = 2222081009…"
+JAMI ABDULLAH Summer 22
+Created 11:33 AM11:33 AM
+import math
+x = 2222081009
+print(math.sqrt(x))
+print(math.pow(x , 2))
+print(math.ceil(x))
+print(math.floor(x))
+print(math.acosh(x))
+
+Add class comment…
+
+
+Announcement: "x = (2 + 3) * 10 - 3 print (x)"
+JAMI ABDULLAH Summer 22
+Created 11:28 AM11:28 AM
+x = (2 + 3) * 10 - 3
+print (x)
+
+Add class comment…
+
+
+Announcement: "x = (10 + 3) * 2 ** 2 print (x)"
+JAMI ABDULLAH Summer 22
+Created 11:26 AM11:26 AM
+x = (10 + 3) * 2 ** 2
+print (x)
+
+Add class comment…
+
+
+Announcement: "x = 10 + 3 * 2 ** 2 print (x)"
+JAMI ABDULLAH Summer 22
+Created 11:23 AM11:23 AM
+x = 10 + 3 * 2 ** 2
+print (x)
+
+Add class comment…
+
+
+Announcement: "course = "Python for beginners" print…"
+JAMI ABDULLAH Summer 22
+Created 11:18 AM11:18 AM
+course = "Python for beginners"
+print (len (course))
+print (course.upper())
+print(course.lower())
+print (course.replace('P' , 'J'))
+print (course.find('y'))
+print ("C++" in course)
+
+Add class comment…
+
+
+Announcement: "first = "John" second = "Smith" message…"
+JAMI ABDULLAH Summer 22
+Created 11:09 AM11:09 AM
+first = "John"
+second = "Smith"
+message = first + " [" + second + "]" + " is a coder"
+print (message)
+
+Add class comment…
+
+
+Announcement: "name = "Jenifier" print (name[1:-1])"
+JAMI ABDULLAH Summer 22
+Created 11:01 AM11:01 AM
+name = "Jenifier"
+print (name[1:-1])
+
+Add class comment…
+
+
+Announcement: "course = "Python for Beginners" print…"
+JAMI ABDULLAH Summer 22
+Created 10:59 AM10:59 AM
+course = "Python for Beginners"
+print (course[:5])
+
+Add class comment…
+
+
+Announcement: "course = "Python for Beginners" print…"
+JAMI ABDULLAH Summer 22
+Created 10:58 AM10:58 AM
+course = "Python for Beginners"
+print (course[1:])
+
+Add class comment…
+
+
+Announcement: "course = "Python for Beginners" print…"
+JAMI ABDULLAH Summer 22
+Created 10:57 AM10:57 AM
+course = "Python for Beginners"
+print (course[0:3])
+
+Add class comment…
+
+
+Announcement: "course = "Python for Beginners" print…"
+JAMI ABDULLAH Summer 22
+Created 10:56 AM10:56 AM
+course = "Python for Beginners"
+print (course[-1])
+
+Add class comment…
+
+
+Announcement: "course = "Python for Beginners" print…"
+JAMI ABDULLAH Summer 22
+Created 10:55 AM10:55 AM
+course = "Python for Beginners"
+print (course[0])
+
+Add class comment…
+
+
+Announcement: "course = "Python for Beginners" print…"
+JAMI ABDULLAH Summer 22
+Created 10:54 AM10:54 AM
+course = "Python for Beginners"
+print (course)
+
+Add class comment…
+
+
+Announcement: "statement = """ Hi John , Here is your…"
+JAMI ABDULLAH Summer 22
+Created 10:50 AM10:50 AM
+statement = """
+Hi John ,
+Here is your first email to you
+Thank You
+The support team
+"""
+print (statement)
+
+Add class comment…
+
+
+Announcement: "python running python main.py"
+JAMI ABDULLAH Summer 22
+Created YesterdayYesterday
+python running 
+python main.py
+
+Add class comment…
+
+
+Announcement: "3 weight = int (input ("Enter your…"
+JAMI ABDULLAH Summer 22
+Created YesterdayYesterday
+3
+weight = int (input ("Enter your weight in pounds ? "))
+kg = float (weight * (0.45))
+print ("Weight in kilogram : " , kg)
+
+Add class comment…
+
+
+Announcement: "2 name = input ("What is your name ? ")…"
+JAMI ABDULLAH Summer 22
+Created YesterdayYesterday
+2
+
+name = input ("What is your name ? ")
+favourate_color = input ("What is your favourate color ? ")
+print (name + " likes " + favourate_color)
+
+Add class comment…
+
+
+Announcement: "1 name = "John Smith" age = 20 is_new =…"
+JAMI ABDULLAH Summer 22
+Created YesterdayYesterday
+1 
+name = "John Smith"
+age = 20
+is_new = True
+print (name)
+print (age)
+print (is_new)
