@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+        string name = "John";
+        int char_age = 35;
+        cout << "There once was a man named " << name << "." << "\n";
+        cout << "He was " << char_age << " years old." << "\n";
+        cout << "He liked the name " << name << "." << "\n";
+        cout << "But he did bot like " << char_age << "." << "\n";
+        return 0;
+}
