@@ -1,0 +1,2 @@
+for i in ["Ali Ziaul Haq" , "Jami Abdullah" , "Rabbi"] :
+        print (i)
