@@ -1,0 +1,18 @@
+c = ""
+while True :
+        c = input ("< ")
+        if c == "start" :
+                print ("Car has started.Ready to go")
+        elif c == "stop" :
+                print ("Car has stopped")
+        elif c == "quit" :
+                break 
+        elif c == "help" :
+                print ("""
+start - to start the car
+stop - to stop the car
+quit - to exit the game      
+                """)
+        else :
+                print ("Sorry , wrong command")
+                
