@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+        char a = 'D';
+        string b = "Dawatus Sunnah Conferance";
+        int c = 18;
+        float d = 18.3;
+        bool having_conferance = true;
+        double e = 1234.67;
+        cout << a << "\n";
+        cout << b << "\n";
+        cout << c << "\n";
+        cout << d << "\n";
+        cout << boolalpha << "\n";
+        cout << "Having conferance : " << having_conferance << "\n";
+        cout << e << "\n";
+        return 0;
+}
