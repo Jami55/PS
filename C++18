@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+        char symbol;
+        cout << "Enter any one symbol : (+ , - , / , % , *) : ";
+        cin >> symbol;
+        int x, y;
+        cout << "Enter two numbers : ";
+        cin >> x >> y;
+        switch (symbol) {
+                case '+' :
+                        cout << x + y << "\n";
+                        break;
+                case '-' :
+                        cout << x - y << "\n";
+                        break;
+                case '/' :
+                        cout << x / y << "\n";
+                        break;
+                case '*' :
+                        cout << x * y << "\n";
+                        break;
+                case '%' :
+                        cout << x % y << "\n";
+                        break;
+                default:
+                        cout << "Wrong choice." << "\n";
+                        break;
+        }
+        return 0;
+}
