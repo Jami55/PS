@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main () {
+        int x[5] = {55, 56, 58, 59, 61};
+        cout << "Full array x [] : ";
+        for (int i = 0; i < 5; i ++) {
+                cout << x[i] << " ";
+        }
+        cout << "\n";
+        cout << "Some elements in the array : ";
+        cout << x[3] << " " << x[2] << " " << x[1] << "\n";
+        return 0;
+}
