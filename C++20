@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main () {
+        string a, b, c, d, e;
+        cout << "Enter first string : ";
+        getline(cin, a);
+        cout << "Enter second string : ";
+        getline(cin, b);
+        cout << "Enter third string : ";
+        getline(cin, c);
+        cout << "Enter fourth string : ";
+        getline(cin, d);
+        cout << "Enter fifth string : ";
+        getline(cin, e);
+        cout << "Mad Libs." << "\n";
+        cout << "It was a " << a << " , " << b << " day , when " << "\n";
+        cout << c << " was " << d << " . " << " Out of nowhere , " << "\n";
+        cout << e << " came to farm." << "\n";
+        return 0;
+}
