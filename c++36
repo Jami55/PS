@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+int get_max (int x , int y , int z) {
+        int result;
+        if (x > y && x > z) {
+                result = x;
+        } else if (y > x && y > z) {
+                result = y;
+        } else {
+                result = z;
+        }
+        return result;
+} 
+
+int main () {
+        cout << get_max(200, 50, 10);
+        return 0;
+}
