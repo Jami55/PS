@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+int get_max (int x , int y) {
+        int result;
+        if (x > y) {
+                result = x;
+        } else {
+                result = y;
+        }
+        return result;
+}
+
+int main () {
+        cout << get_max(5.0, 2.0);
+        return 0;
+}
