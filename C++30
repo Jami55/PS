@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+double cube (int n) {
+        return n * n * n;
+}
+
+int main () {
+        cout << cube(5.0) << "\n";
+        return 0;
+}
