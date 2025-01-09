@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+void sayHi (string name) {
+        cout << "Hello " << name << "\n";
+}
+
+int main () {
+        sayHi("Mike");
+        return 0;
+}
