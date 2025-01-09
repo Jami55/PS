@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+void sayHi (string name , int age) {
+        cout << "Hello " << name << " . You are " << age << "\n";
+}
+
+int main () {
+        sayHi("Mike" , 60);
+        return 0;
+}
