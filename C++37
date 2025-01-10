@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+int f (int x , int y , char op) {
+        int result;
+        if (op == '+') {
+                result = x + y;
+        }  else if (op == '-') {
+                result = x - y;
+        } else if (op == '/') {
+                result = x / y;
+        } else if (op == '*') {
+                result = x * y;
+        } else if (op == '%') {
+                result = x % y;
+        } else {
+                cout << "Invalid operator" << "\n";
+        }
+        cout << result << "\n";
+        return result;
+}
+
+int main () {
+        int x, y;
+        char op;
+        cout << "Enter first number : ";
+        cin >> x ;
+        cout << "Enter second numbers : ";
+        cin >> y;
+        cout << "Enter one operator (+ , - , * , / , %) : ";
+        cin >> op;
+        f(x, y, op);
+        return 0;
+}
