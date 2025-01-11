@@ -1,0 +1,44 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+int f (int day) {
+        string d;
+        switch (day) {
+                case 1 :
+                        d = "Sunday";
+                        break;
+                case 2 :
+                        d = "Monday";
+                        break;
+                case 3 :
+                        d = "Tuesday";
+                        break;
+                case 4 :
+                        d = "Wednesday";
+                        break;
+                case 5 :
+                        d = "Thursday";
+                        break;
+                case 6 :
+                        d = "Friday";
+                        break;
+                case 7 :
+                        d = "Saturday";
+                        break;
+                default :
+                        cout << "Invalid input" << "\n";
+                        break;
+        }
+        cout << d << "\n";
+        return 1;
+}
+
+int main () {
+        int day;
+        cout << "Enter the day number : ";
+        cin >> day;
+        f(day);
+        return 0;
+}
