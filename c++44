@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+bool f (int secrete_number , int guess_number , int guess_count) {
+        guess_count = 1;
+        bool win = false;
+        while (guess_count <= 3) {
+                cout << "Guess : ";
+                cin >> guess_number;
+                guess_count++;
+                if (secrete_number == guess_number) {
+                        break;
+                }
+        }
+        if (secrete_number != guess_number) {
+                win = false;
+                cout << "Sorry , you failed!" << "\n";
+        } else {
+                win = true;
+                cout << "You Won!" << "\n";
+        }
+        return win;
+}
+
+int main () {
+        int secrete_number = 7, guess_number, guess_count;
+        f(secrete_number, guess_number, guess_count);
+        return 0;
+}
