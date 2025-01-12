@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+ 
+bool f (int number[5]) {
+        bool print = false;
+        cout << "Array : ";
+        for (int i = 0; i < 5; i ++) {
+                cout << number[i] << " ";
+        }
+        cout << "\n";
+        print = true;
+        return print;
+}
+
+int main () {
+        int number[5] = {1, 2, 5, 7, 3};
+        f(number);
+        return 0;
+}
