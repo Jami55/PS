@@ -1,0 +1,7 @@
+public class V {
+	public static void main (String [] args) {
+		int my_age = 24 ;
+		int Jami_age = my_age ;
+		System.out.println ("Jami's age is : " + Jami_age) ;
+	}
+}
