@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std ;
+
+bool f () {
+	bool print = false ;
+	string name = "Jami Abdullah" ;
+	string *p_name = &name ;
+	int age = 24 ;
+	int *p_age = &age ;
+	int gpa = 3.09 ;
+	int *p_gpa = &gpa ;
+	cout << "Name : " << name << "\n" ;
+	cout << "Address of name variable : " << p_name << "\n" ;
+	cout << "Age : " << age << "\n" ;
+	cout << "Address of age variable : " << p_age << "\n" ;
+	cout << "GPA : " << gpa << "\n" ;
+	cout << "Address of GPA variable : " << p_gpa << "\n" ;
+	print = true ;
+	return print ;
+}
+
+int main () {
+	f () ;
+	return 0 ;
+}
