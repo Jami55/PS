@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std ;
+
+class Book {
+public :
+    string title , author ;
+    int page ;
+};
+
+int main () {
+    Book first ;
+    first.title = "Shaban Mash abong shobe barat" ;
+    first.author = "Dr. Saifullah" ;
+    first.page = 50 ;
+    cout << "Book name : " << first.title << "\n" ;
+    cout << "Book author : " << first.author << "\n" ;
+    cout << "Book page : " << first.page << "\n" ;    
+    return 0 ;
+}
