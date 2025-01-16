@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+class Book {
+public :
+        Book () {
+                cout << "Book Object" << "\n";
+        }
+};
+
+int main () {
+        Book first;
+        Book second;
+        return 0;
+}
