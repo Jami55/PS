@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+class Book {
+public :
+        string title, author;
+        int page;
+        Book (string t , string a , int p) {
+                title = t;
+                author = a;
+                page = p;
+        }
+};
+
+int main () {
+        Book first("Shaban Mash abong Shobe Barat", "Dr . Saifullah", 50);
+        Book second("Salate Mubashir", "Shaikh Abdul Hamid Faizi", 338);
+        cout << "List of names of the books and titles and number of pages" << "\n";
+        cout << first.title << "\n";
+        cout << first.author << "\n";
+        cout << first.page << "\n";
+        cout << second.title << "\n";
+        cout << second.author << "\n";
+        cout << second.page << "\n";
+        return 0;
+}
